@@ -1,0 +1,51 @@
+/* Import typeface */
+
+/* page reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+/* video background */
+/* adapted from https://www.w3schools.com/howto/howto_css_fullscreen_video.asp */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.largeHeader {
+  padding-top: 2%;
+  height: 100vh;
+  overflow: hidden;
+  cursor: default;
+  /* background: black; */
+  /* mix-blend-mode: multiply; */
+  /* background-image: url("/assets/images/road-gfe83e1a7f_1920.jpeg"); */
+}
+
+.largeHeader h1 {
+  font-size: 12rem;
+  line-height: 9rem;
+  font-weight: 800;
+  filter: blur(0.3rem);
+}
+
+.largeHeader h2 {
+  font-size: 1rem;
+  padding-bottom: 1%;
+}
+
+.dropbutton {
+  border: none;
+  font-weight: 500;
+  font-size: 110px;
+  line-height: 6rem;
+  filter: blur(0.3rem);
+  background-color: rgba(0, 0, 0, 0);
+}

@@ -1,0 +1,55 @@
+/* page reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+.submissionHeader {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+#container {
+  grid-column: 1/2;
+  align-self: center;
+  justify-self: center;
+}
+
+.items {
+  align-self: center;
+  padding-left: 15%;
+  justify-self: start;
+}
+
+#backHome:link,
+#backHome:visited {
+  color: #f0f2f1;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 5rem;
+}
+
+#backHome:hover {
+  font-size: 6rem;
+}
+
+.items a:link,
+.items a:visited {
+  color: #f0f2f1;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 5rem;
+}
+
+.items a:hover {
+  /* color: red; */
+  text-decoration: none;
+  font-size: 8rem;
+}

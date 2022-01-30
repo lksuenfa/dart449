@@ -7,59 +7,24 @@
 
     <!-- CSS stylesheet(s) -->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/menu.css" /> -->
     <title>DART449 Personal website</title>
   </head>
   <body>
-    <!-- video background -->
-    <!-- adapted from https://www.w3schools.com/howto/howto_css_fullscreen_video.asp -->
-    <video autoplay muted loop id="myVideo">
-      <source src="/assets/images/film-roll.mp4" type="video/mp4" />
-    </video>
-
     <!-- header div -->
     <header>
       <section class="largeHeader">
-        <h2>Leanne K. Suen Fa</h2>
-        <h1>DART <br />449</h1>
+        <h3 class="bkg" id="name"><span>Leanne K. Suen Fa</span></h3>
+        <h1 class="bkg" id="program"><span> DART </span></h1>
+        <h1 class="bkg" id="courseID"><span>449</span></h1>
+        <h4 class="bkg" id="uni"><span>Concordia University</span></h4>
+        <h4 class="bkg" id="semester">
+          <span> WINTER 2022 </span>
+        </h4>
 
-        <!-- nav div -->
-        <nav>
-          <div class="menu">
-            <!-- reflection -->
-            <div class="dropdown">
-              <button class="dropbutton">READINGS</button>
-              <div class="dropdown-content">
-                <!-- <a href=""> Reading 1</a>
-                <a href=""> Reading 2</a>
-                <a href=""> Reading 3</a>
-                <a href=""> Reading 4</a>
-                <a href=""> Reading 5</a> -->
-              </div>
-            </div>
-
-            <!-- exercises -->
-            <div class="dropdown">
-              <button class="dropbutton">EXERCISES</button>
-              <div class="dropdown-content">
-                <!-- <a href=""> Exercise 1</a>
-                <a href=""> Exercise 2</a>
-                <a href=""> Exercise 3</a>
-                <a href=""> Exercise 4</a>
-                <a href=""> Exercise 5</a> -->
-              </div>
-            </div>
-
-            <!-- projects -->
-            <div class="dropdown">
-              <button class="dropbutton">PROJECT</button>
-              <!-- <div class="dropdown-content"> -->
-              <!-- <a href=""> Proposal</a>
-                <a href=""> Final website</a>
-              </div> -->
-            </div>
-          </div>
-        </nav>
+        <a id="readings" href="/readings/readings.html">READINGS</a> <br />
+        <a id="project" href="/project/project.html">PROJECT</a> <br />
+        <a id="exercise" href="exercises/exercise.html">EXERCISES</a> <br />
       </section>
     </header>
   </body>

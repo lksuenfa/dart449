@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+#grid {
+  height: 100vh;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 30%;
+  padding-right: 30%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 2.5%;
+  grid-row-gap: 5%;
+  justify-items: center;
+
+  color: white;
+}
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: #555;
+  padding: 10%;
+  justify-items: center;
+}
+
+.invisibleSquare {
+  display: none;
+  height: 100px;
+  width: 100px;
+  background-color: #555;
+  padding: 10%;
+}
+
+button {
+  color: white;
+}
+
+#pointer {
+  grid-row: 2/3;
+}

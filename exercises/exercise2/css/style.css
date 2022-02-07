@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@600&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+}
+
+.welcome {
+  color: white;
+  font-family: "Gluten", cursive;
+}
+
+#aquarium {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fish {
+  width: 10%;
+  height: auto;
+}

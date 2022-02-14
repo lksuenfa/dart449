@@ -1,0 +1,23 @@
+body {
+  padding: 3%;
+}
+#winningMsg {
+  display: none;
+}
+
+#displayAddBtn,
+#displayMinusBtn {
+  padding-bottom: 3%;
+}
+
+#displayAddBtn button {
+  background-color: darkseagreen;
+  border: none;
+  width: 50px;
+}
+
+#displayMinusBtn button {
+  background-color: indianred;
+  border: none;
+  width: 50px;
+}

@@ -1,0 +1,23 @@
+.slide {
+  opacity: 0;
+  transform: translateX(6em);
+  transition: all 0.5s 0.35s ease-out;
+  will-change: all;
+}
+
+.slide.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(6em);
+  transition: all 0.3s 0.5s ease-out;
+  will-change: all;
+}
+
+.slide-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

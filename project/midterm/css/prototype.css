@@ -1,0 +1,27 @@
+body {
+  background-color: teal;
+  padding: 2%;
+  color: white;
+}
+
+.small_header {
+  padding: 3% 5%;
+  font-size: 2rem;
+}
+
+.ui_container {
+  padding: 0% 5%;
+}
+
+.ui_container h3 {
+  padding: 2% 0%;
+}
+
+.ui_container figure {
+  padding-bottom: 5%;
+}
+
+.ui_container figcaption {
+  padding-top: 1%;
+  width: 50%;
+}

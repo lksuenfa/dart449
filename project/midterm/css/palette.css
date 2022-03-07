@@ -1,0 +1,59 @@
+.style {
+  padding-left: 5%;
+}
+
+.palette_section {
+  padding: 2% 0%;
+}
+
+#palette {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#palette figure {
+  padding: 2%;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+}
+
+#red {
+  background-color: #bf0607;
+}
+#plum {
+  background-color: #600218;
+}
+#teal {
+  background-color: #025b6d;
+}
+#chartreuse {
+  background-color: #7f961a;
+}
+#lime {
+  background-color: #d4d80e;
+}
+#black {
+  background-color: black;
+}
+#beige {
+  border: black solid 1px;
+  background-color: #eeeae5;
+}
+
+#xanh {
+  font-family: "xanh mono", monospace;
+  font-size: 2rem;
+}
+
+.typography h4 {
+  padding-top: 2%;
+}
+
+.style_img {
+  width: 100px;
+  height: auto;
+}

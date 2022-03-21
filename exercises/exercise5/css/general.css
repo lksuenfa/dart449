@@ -1,0 +1,66 @@
+/*------------------- import typefaces */
+/* roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* xanh*/
+@import url("https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap");
+
+/* ------------------- Variable declarations */
+:root {
+  /* palette */
+  --red: #bf0607;
+  --plum: #600218;
+  --teal: #025b6d;
+  --chartreuse: #7f961a;
+  --lime: #d4d80e;
+  --black: #0000;
+  --beige: #eeeae5;
+
+  /* typeface */
+  --bodyFont: "Roboto", sans-serif;
+  --specialFont: "Xanh Mono", monospace;
+}
+
+/* ------------------- Styles*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eeeae5;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+
+main {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+section:nth-child(even) {
+  background-color: teal;
+  color: white;
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    flex-direction: row;
+  }
+
+  section {
+    min-width: 100%;
+  }
+  section:nth-child(even) {
+    background-color: crimson;
+  }
+}

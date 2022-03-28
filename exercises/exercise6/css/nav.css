@@ -1,0 +1,128 @@
+/* ------------------- Variable declarations */
+:root {
+  /* palette */
+  --red: #bf0607;
+  --plum: #600218;
+  --teal: #025b6d;
+  --chartreuse: #7f961a;
+  --lime: #d4d80e;
+  --black: #0000;
+  --beige: #eeeae5;
+
+  /* typeface */
+  --bodyFont: "Roboto", sans-serif;
+  --specialFont: "Xanh Mono", monospace;
+
+  /* page margins */
+  --sideMargins: 0% 5%;
+}
+
+/* vertical scroll */
+nav {
+  padding: 10px;
+  background-color: var(--beige);
+  display: flex;
+  justify-content: flex-end;
+}
+.overlay {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+
+  background-color: var(--red);
+
+  overflow-x: hidden;
+
+  transition: 1s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  /* padding: 8px; */
+  text-decoration: none;
+  font-size: 36px;
+  color: var(--beige);
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: var(--beige);
+}
+
+#openbtn {
+  font-size: 25px;
+}
+
+#closebtn {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  font-size: 50px;
+}
+
+nav {
+  width: 100%;
+
+  position: fixed;
+  z-index: 1;
+  border-bottom: black solid 1px;
+}
+
+/* horizontal scroll */
+/* landscape phones */
+@media screen and (max-height: 450px) {
+  nav {
+    padding: 5px;
+    width: 7%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    justify-content: center;
+    border-bottom: none;
+    border-right: black solid 1px;
+  }
+
+  .overlay a {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  nav {
+    padding: 5px;
+    width: 4%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    justify-content: center;
+    border-bottom: none;
+    border-right: black solid 1px;
+  }
+
+  #s1 {
+    margin-left: 4%;
+  }
+
+  #openbtn,
+  #closebtn {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  nav {
+    width: 3%;
+  }
+}

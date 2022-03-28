@@ -1,0 +1,132 @@
+:root {
+  /* palette */
+  --red: #bf0607;
+  --plum: #600218;
+  --teal: #025b6d;
+  --chartreuse: #7f961a;
+  --lime: #d4d80e;
+  --black: #0000;
+  --beige: #eeeae5;
+
+  /* typeface */
+  --bodyFont: "Roboto", sans-serif;
+  --specialFont: "Xanh Mono", monospace;
+
+  /* page margins */
+  --sideMargins: 0% 5%;
+}
+
+/* paragraph styles */
+.style_h1 {
+  font-size: 3rem;
+  line-height: 0.9;
+}
+
+.style_h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.style_h1_accent {
+  font-family: var(--specialFont);
+  font-weight: lighter;
+  font-size: 6rem;
+}
+
+.style_h2_accent {
+  font-family: var(--specialFont);
+  font-size: 2.5rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.style_h3_accent {
+  font-family: var(--specialFont);
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.style_body_accent_red {
+  font-weight: 600;
+  color: var(--red);
+}
+
+.main_section {
+  padding: var(--sideMargins);
+}
+
+body {
+  font-size: 1.5rem;
+}
+
+/* ------------ s1 */
+.s1_header {
+  width: 100%;
+  padding-top: 30%;
+  height: 100vh;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+.s1_header h1,
+.s1_header h2 {
+  color: var(--plum);
+}
+
+#titlePageImg {
+  height: 65%;
+}
+
+/* ------------ s2 */
+#globalFLW {
+  display: flex;
+}
+
+#globalFLW h1 {
+  color: var(--plum);
+}
+
+#globalFLW p {
+  padding-top: 5%;
+  padding-left: 10%;
+}
+
+#canadaFLW p {
+  padding-top: 10%;
+}
+
+#canadaFLW h2 {
+  padding: 10% 0%;
+  color: var(--plum);
+}
+
+#fiveTomatoes {
+  z-index: -5;
+  padding-top: 10%;
+  padding-bottom: 20vh;
+}
+
+.tomatoes {
+  width: 20%;
+  padding: 1%;
+}
+
+/* s3 */
+
+#s3 h1 {
+  color: var(--teal);
+  z-index: 1;
+}
+
+#eiffelContainer {
+  padding-right: 10%;
+  width: 90%;
+  height: 100vh;
+  background-color: red;
+  position: absolute;
+  z-index: -1;
+}
+
+/*_ Small devices (portrait tablets and large phones, 600px and up) _*/
+@media only screen and (min-width: 600px) {
+}

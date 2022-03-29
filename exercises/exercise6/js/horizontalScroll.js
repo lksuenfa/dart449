@@ -50,15 +50,16 @@ ScrollTrigger.matchMedia({
       },
     });
 
-    // when the section intersects with the 2/3 of the page
-    // add the active class.
-    // animation is controlled in style.css line 69
     triggerAnimation.forEach((sct, i) => {
+      console.log(
+        (sct.offsetLeft - window.innerWidth / 2) *
+          (maxWidth / (maxWidth - window.innerWidth))
+      );
       ScrollTrigger.create({
         trigger: sct,
         start: () =>
           "top top-=" +
-          (sct.offsetLeft - window.innerWidth / 1.5) *
+          (sct.offsetLeft - window.innerWidth / 4) *
             (maxWidth / (maxWidth - window.innerWidth)),
         end: () =>
           "+=" + sct.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),

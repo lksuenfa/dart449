@@ -12,7 +12,7 @@
     <!-- css  -->
     <link rel="stylesheet" type="text/css" href="css/general.css" />
     <link rel="stylesheet" type="text/css" href="css/nav.css" />
-    <link rel="stylesheet" type="text/css" href="css/content.css" />
+
     <link rel="stylesheet" type="text/css" href="css/content_horizontal.css" />
     <link rel="stylesheet" type="text/css" href="css/barchart.css" />
 
@@ -97,8 +97,19 @@
       </section>
 
       <section id="s3" class="main_section">
+        <div id="sliderImg" class="sliderImg"></div>
         <p>Roughly the equivalent weight of</p>
-        <h1 class="style_h1_accent">1089</h1>
+        <div id="sliderContainer">
+          <input
+            type="range"
+            min="0"
+            max="1089"
+            value="50"
+            class="slider"
+            id="range"
+          />
+          <h1 class="style_h1_accent"><span id="numSlider">1</span></h1>
+        </div>
 
         <h2 class="style_h1_accent">Eiffel Towers</h2>
       </section>

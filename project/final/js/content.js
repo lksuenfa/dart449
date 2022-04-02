@@ -8,27 +8,31 @@ let fiveTomatoes = {
   numTomatoes: 5,
 };
 
-window.onload = function () {
-  let rottenTomato = document.querySelector("#tomato4");
-  // 5th tomato has a different image
-  // tomatoes[fiveTomatoes.numTomatoes] = displayImg(
-  //   fiveTomatoes.container,
-  //   fiveTomatoes.imageRotten,
-  //   "tomato" + tomatoes.length,
-  //   "tomato animate"
-  // );
+let numSlider = document.querySelector("#numSlider");
+let range = document.querySelector("#range");
+let rectangle = document.querySelector("#sliderImg");
+let rectWidth = rectangle.style.width;
 
-  // display 4 tomatoes
-  for (let i = 0; i < fiveTomatoes.numTomatoes - 1; i++) {
-    let id = "tomato" + i;
-    tomatoes[i] = displayImg(
-      fiveTomatoes.container,
-      fiveTomatoes.image,
-      id,
-      "tomato"
-    );
-  }
+let rottenTomato = document.querySelector("#tomato4");
+// display 4 tomatoes
+for (let i = 0; i < fiveTomatoes.numTomatoes - 1; i++) {
+  let id = "tomato" + i;
+  tomatoes[i] = displayImg(
+    fiveTomatoes.container,
+    fiveTomatoes.image,
+    id,
+    "tomato"
+  );
+}
+
+// edit slider
+range.oninput = function () {
+  numSlider.innerHTML = this.value;
+  // rectWidth as a % of the screensize
+  rectWidth = (this.value / 1089) * window.innerWidth;
+  rectangle.style.width = rectWidth + "px";
 };
+
 // display Image
 function displayImg(container, image, id, newClass) {
   let img = document.createElement("img");

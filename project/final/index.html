@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercise 5 - project prototype</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.png" />
+
+    <!-- css  -->
+    <link rel="stylesheet" type="text/css" href="css/general.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/content_horizontal.css" />
+    <link rel="stylesheet" type="text/css" href="css/barchart.css" />
+
+    <!-- effets stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+
+    <!-- library scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- menu -->
+    <nav>
+      <!-- overlay -->
+      <div id="menu" class="overlay">
+        <!-- closebtn -->
+        <a id="closebtn">&times;</a>
+
+        <!-- menu content -->
+        <ul class="overlay-content">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="navigateToSection" href="#s3">Header3</a></li>
+        </ul>
+      </div>
+
+      <!-- open btn -->
+      <span id="openbtn">☰</span>
+    </nav>
+
+    <!-- ask viewer to rotate screen if portrait -->
+    <div id="modal">
+      <div>
+        <h3>This website works best in landscape mode.</h3>
+        <p>Please rotate your screen</p>
+      </div>
+    </div>
+
+    <!-- content -->
+    <main class="main-content">
+      <!-- section 1 -->
+      <section id="s1" class="main_section animate">
+        <!-- section 1 -->
+        <div id="s1_header" class="s1_header">
+          <h2 class="style_h2_accent animate">
+            Beyond the
+          </h2>
+          <h1 class="style_h1 animate">Food Waste Crisis</h1>
+
+          <!-- tomato img here -->
+          <div id="titlePageImg"></div>
+
+          <h3 class="style_h2">
+            A walk through a global food security issue
+          </h3>
+        </div>
+        <!-- s1_header -->
+      </section>
+      <!-- s1 -->
+
+      <!-- section 2 -->
+      <section id="s2" class="main_section animate">
+        <h1 class="globalFLW style_h1_accent animate">1/3</h1>
+
+        <p id="globalFLW" class="globalFLW style_body">
+          Globally nearly a third of the food production intended for human
+          consumption is lost or wasted.
+        </p>
+
+        <p id="canadaFLW" class="style_body">
+          In Canada only, at least
+          <span class="style_body_accent_red">20% </span> of all food produced
+          ends up in landfills, incinerated or managed as organic waste.
+        </p>
+
+        <div id="fiveTomatoes" class="canadaFLW animate">
+          <img src="assets/pictures/tomato-02.png" class="tomato" />
+        </div>
+
+        <h2 class="style_h2_accent">
+          This <br />represents 11 million tonnes of avoidable food waste
+        </h2>
+      </section>
+
+      <section id="s3" class="main_section">
+        <p>Roughly the equivalent weight of</p>
+        <h1 class="style_h1_accent">1089</h1>
+
+        <h2 class="style_h1_accent">Eiffel Towers</h2>
+      </section>
+
+      <section id="s4" class="main_section">
+        <h2 class="style_h2">
+          While the economic value of food waste in 2016 amounted to 3% of
+          Canada’s gdp
+        </h2>
+
+        <h1 class="style_h1_accent">
+          $49.5
+        </h1>
+
+        <h2 class="style_h2_accent">
+          billions down the drain
+        </h2>
+
+        <p>
+          Enough to feed every person living in Canada for 5 months
+        </p>
+      </section>
+
+      <section id="s5" class="main_section">
+        <h2 class="style_h2_accent">In terms of environmental impact...</h2>
+
+        <p>
+          As rotting food waste in landfills turn into methane, a gas 25% more
+          potent than carbon dioxide (CO2),
+        </p>
+
+        <p>
+          the
+          <span class="style_body_accent_red">greenhouse gas footprint </span>of
+          avoidable food waste is equivalent to
+          <span class="style_body_accent_red">
+            nearly 56.5 million tonnes of CO2 released </span
+          >into the atmosphere.
+        </p>
+
+        <h1 class="style_h1_accent">
+          56.5
+        </h1>
+        <h2 class="style_h3_accent">
+          Million tonnes of CO2 released into the atmosphere
+        </h2>
+        <h2 class="style_h1_accent">+</h2>
+        <h1 class="style_h1_accent">
+          1.4
+        </h1>
+        <h2 class="style_h3_accent">
+          Billion tonnes fresh water wasted wasted
+        </h2>
+
+        <p class="style_h3_accent">
+          Food waste accounts for 60% of the canadian food industry’s blue water
+          footprint
+        </p>
+      </section>
+    </main>
+
+    <!-- my scripts -->
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/horizontalScroll.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/barchart.js"></script>
+  </body>
+</html>

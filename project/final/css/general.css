@@ -1,0 +1,99 @@
+/*------------------- import typefaces */
+/* roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* xanh*/
+@import url("https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap");
+
+/* ------------------- Variable declarations */
+:root {
+  /* palette */
+  --red: #bf0607;
+  --plum: #600218;
+  --teal: #025b6d;
+  --chartreuse: #7f961a;
+  --lime: #d4d80e;
+  --black: #0000;
+  --beige: #eeeae5;
+
+  /* typeface */
+  --bodyFont: "Roboto", sans-serif;
+  --specialFont: "Xanh Mono", monospace;
+}
+
+/* ------------------- Styles*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eeeae5;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+
+main {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_section {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+/* to be removed */
+.main_section:nth-child(even) {
+  /* background-color: teal;
+  color: white; */
+  /* border-top: dimgrey solid 1px;
+  border-bottom: dimgrey solid 1px; */
+}
+
+@media screen and (orientation: portrait) {
+  #modal {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: var(--chartreuse);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: var(--beige);
+    font-size: 1rem;
+    padding: 10%;
+  }
+
+  body {
+    overflow: hidden;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  #modal {
+    display: none;
+  }
+
+  main {
+    flex-direction: row;
+  }
+
+  section {
+    min-width: 100%;
+  }
+}
+
+/* horizontal scroll on landscape mobile devices only */

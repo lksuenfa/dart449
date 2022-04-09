@@ -30,7 +30,7 @@
 .style_h1_accent {
   font-family: var(--specialFont);
   font-weight: lighter;
-  font-size: 6rem;
+  font-size: 5.8rem;
 }
 
 .style_h2_accent {
@@ -56,7 +56,7 @@
 }
 
 .style_body {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 /* ----------s1 */
 .s1_header {
@@ -96,41 +96,46 @@
 }
 
 /* --------s2 */
+
+#s2_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#s2_1 h1 {
+  color: var(--plum);
+}
+
+#globalFLW {
+  width: 50%;
+  padding-left: 10%;
+}
+
 #s2 {
   height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-#s2 h1 {
-  align-items: center;
-  text-align: right;
-  padding-right: 10%;
-
-  grid-row: 2/3;
-  grid-column: 1/3;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 #s2 h2 {
-  grid-row: 2/4;
-  grid-column: 3/5;
-  align-self: flex-end;
-}
-#globalFLW {
-  align-self: center;
-  grid-column: 2/3;
-  grid-row: 3/4;
-  padding-right: 15%;
+  grid-row: 2/3;
+  grid-column: 2/6;
+  align-self: flex-start;
+  font-size: 2.3rem;
+  padding: 2%;
 }
 
 #canadaFLW {
-  grid-column: 3/4;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  grid-column: 4/6;
   grid-row: 1/2;
 
-  align-self: center;
   padding-top: 10%;
-  padding-right: 20%;
+  padding-right: 10%;
 }
 
 #fiveTomatoes {
@@ -141,9 +146,9 @@
   justify-content: space-around;
   align-items: center;
   grid-row: 1/2;
-  grid-column: 1/3;
+  grid-column: 1/4;
 
-  padding: 10%;
+  /* padding: 15%; */
 }
 #fiveTomatoes img {
   width: 15%;
@@ -153,11 +158,200 @@
 
 /* --------s3 */
 #sliderImg {
+  top: 0;
+  left: 0;
   width: 0%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   z-index: -10;
   background-color: var(--teal);
+}
+
+#sliderFrontImg {
+  top: -20px;
+  left: -30px;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -5;
+}
+
+#testImg {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-image: url("../assets/pictures/eiffelTest.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -5;
+}
+
+/* --------s4 */
+
+#s4 {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#s4 p.style_h2 {
+  color: var(--plum);
+  grid-column: 1/2;
+  grid-row: 1/4;
+  align-self: center;
+  width: 80%;
+}
+
+#s4 p.style_h1_accent {
+  font-size: 9rem;
+  color: var(--chartreuse);
+  grid-column: 2/4;
+  grid-row: 3/5;
+}
+
+#s4 p.style_h2_accent {
+  color: var(--plum);
+  grid-column: 2/5;
+  grid-row: 5/6;
+  align-self: center;
+}
+
+#s4 p.style_body {
+  grid-column: 3/5;
+  grid-row: 1/3;
+
+  align-self: center;
+  justify-content: center;
+  padding-left: 40%;
+  padding-right: 20%;
+}
+
+/* ---------s5 */
+
+#s5 {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr;
+  grid-template-rows: 1fr 1fr 0.5fr;
+}
+
+#s5 p.style_h2_accent {
+  grid-row: 1/4;
+  grid-column: 1/2;
+  transform: rotate(-180deg);
+  writing-mode: vertical-rl;
+  text-align: center;
+
+  font-size: 1rem;
+}
+
+#s5 p.para1 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  align-self: flex-end;
+  /* justify-self: center; */
+  width: 60%;
+}
+
+#s5 p.para2 {
+  grid-row: 2/4;
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: center;
+  width: 60%;
+}
+
+#s5 p.style_h1_accent {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  font-size: 5rem;
+  color: var(--red);
+  align-self: flex-end;
+}
+
+#s5 p.style_h3_accent {
+  font-size: 1rem;
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+/* -------s6 */
+
+#s6 {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#sign {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  align-self: flex-end;
+}
+
+#stat {
+  grid-column: 2/4;
+  grid-row: 2/4;
+  font-size: 12rem;
+  color: var(--teal);
+}
+
+#s6 p.style_h3_accent {
+  grid-column: 2/4;
+  grid-row: 4/5;
+  font-size: 1rem;
+  padding-top: 2%;
+}
+
+#s6 p.style_body {
+  width: 50%;
+  grid-column: 3/4;
+  grid-row: 1/3;
+  padding-top: 10%;
+  justify-self: center;
+}
+
+/* ---------s7 */
+
+#s7 p.title.style_h2 {
+  width: 30%;
+  padding: 5%;
+  text-transform: uppercase;
+}
+
+#s7 .stat {
+  text-transform: uppercase;
+  padding-left: 50%;
+  display: grid;
+  grid-template-columns: 0.5fr 4fr;
+  grid-template-rows: 0.5fr 4fr;
+  width: 50vh;
+  height: 40vh;
+}
+
+#category {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+#volume {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  transform: rotate(-180deg);
+  writing-mode: vertical-rl;
+}
+
+#percentage {
+  margin-top: 10%;
+  font-size: 10rem;
+  align-self: flex-end;
+  line-height: 0.9;
 }
 
 /*_ Medium devices (landscape tablets, 768px and up) _*/
@@ -165,15 +359,26 @@
   #s1 {
     padding-left: 5%;
   }
+  #s2_1 h1 {
+    font-size: 8rem;
+  }
+
+  #globalFLW {
+    font-size: 1.5rem;
+  }
+
   #s2 h1 {
-    font-size: 9rem;
+    font-size: 8rem;
   }
 
   #s2 h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
-  .style_body {
-    font-size: 0.9rem;
+
+  /* -----s4 */
+  #s4 p.style_h2 {
+    width: 60%;
+    font-size: 1rem;
   }
 }
 
@@ -223,68 +428,97 @@
   }
 
   /* --------s2 */
+  #s2_1 h1 {
+    font-size: 10rem;
+  }
+
+  #globalFLW {
+    font-size: 2rem;
+  }
 
   .style_body {
-    font-size: 1.3rem;
-  }
-  #s2 {
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    font-size: 1.6rem;
   }
 
   #s2 h1 {
-    align-items: center;
-    text-align: right;
-    padding-right: 10%;
-
-    grid-row: 2/3;
-    grid-column: 1/3;
-
-    font-size: 12rem;
+    align-self: flex-end;
+    font-size: 15rem;
   }
   #s2 h2 {
-    grid-row: 2/4;
-    grid-column: 3/5;
-    align-self: flex-end;
-
     font-size: 4rem;
     padding-bottom: 10%;
   }
   #globalFLW {
-    align-self: center;
-    grid-column: 2/3;
-    grid-row: 3/4;
     padding-right: 15%;
+    width: 70%;
   }
 
-  #canadaFLW {
-    grid-column: 3/4;
-    grid-row: 1/2;
+  /* ------s4 */
+  #s4 p.style_h2 {
+    width: 80%;
+    padding-left: 5%;
+    font-size: 1.5rem;
+  }
 
+  #s4 p.style_h1_accent {
+    font-size: 19rem;
+  }
+
+  /* --------s5 */
+
+  #s5 {
+    padding-left: 10%;
+  }
+  #s5 p.style_h2_accent,
+  #s5 p.style_h3_accent {
+    font-size: 2rem;
+  }
+
+  #s5 p.style_h1_accent {
+    font-size: 12rem;
+  }
+
+  /* --------s6 */
+  #sign {
     align-self: center;
-    /* padding-top: 10%; */
-    /* padding-right: 20%; */
+    justify-self: center;
+  }
+  #stat {
+    font-size: 16rem;
+    align-self: flex-end;
+    padding-top: 60%;
   }
 
-  #fiveTomatoes {
-    z-index: -1;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: space-around;
-    align-items: center;
-    grid-row: 1/2;
-    grid-column: 1/3;
-
-    padding: 10%;
+  #s6 p.style_h3_accent {
+    padding-top: 0%;
+    font-size: 2rem;
+    align-self: flex-start;
   }
-  #fiveTomatoes img {
-    width: 20%;
 
-    padding: 1%;
+  /* -------s7 */
+
+  #volume {
+    font-size: 1.5rem;
+  }
+  #percentage {
+    font-size: 14rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #s2_1 h1 {
+    font-size: 13rem;
+  }
+
+  #globalFLW {
+    font-size: 2.5rem;
+  }
+  #s2 h2 {
+    font-size: 5rem;
+  }
+
+  #stat {
+    font-size: 25rem;
   }
 }
 
@@ -292,11 +526,70 @@
   .style_h1 {
     font-size: 10rem;
   }
-  .style_h2_accent {
+
+  .style_h1_accent {
+    font-size: 10rem;
+  }
+
+  /* ------s2 */
+  #s2_1 h1 {
+    font-size: 15rem;
+  }
+
+  #globalFLW {
+    font-size: 3.5rem;
+  }
+  #s2 h1 {
+    font-size: 20rem;
+  }
+
+  #s2 h2 {
     font-size: 6rem;
   }
 
   .style_h2 {
     font-size: 3rem;
+  }
+  .style_body {
+    font-size: 2.5rem;
+  }
+
+  /* ------s4 */
+  #s4 p.style_h2 {
+    font-size: 3rem;
+  }
+
+  #s4 p.style_h1_accent {
+    font-size: 26rem;
+  }
+
+  #s4 p.style_h2_accent {
+    font-size: 7rem;
+  }
+  #s4 p.style_body {
+    font-size: 3rem;
+  }
+
+  /* ---------s5 */
+
+  #s5 p.style_h2_accent,
+  #s5 p.style_h3_accent {
+    font-size: 3rem;
+  }
+
+  #s5 .style_body {
+    font-size: 2.4rem;
+  }
+
+  #s5 p.style_h1_accent {
+    font-size: 15rem;
+  }
+
+  /* -------s7 */
+  #volume {
+    font-size: 2rem;
+  }
+  #percentage {
+    font-size: 20rem;
   }
 }

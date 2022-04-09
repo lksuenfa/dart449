@@ -34,7 +34,7 @@
         <ul class="overlay-content">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a class="navigateToSection" href="#s3">Header3</a></li>
+          <li><a class="navigateToSection" href="#s7">Header7</a></li>
         </ul>
       </div>
 
@@ -73,31 +73,38 @@
       <!-- s1 -->
 
       <!-- section 2 -->
-      <section id="s2" class="main_section animate">
+      <section id="s2_1" class="main_section animate">
         <h1 class="globalFLW style_h1_accent animate">1/3</h1>
 
         <p id="globalFLW" class="globalFLW style_body">
           Globally nearly a third of the food production intended for human
-          consumption is lost or wasted.
+          consumption is wasted.
         </p>
+      </section>
 
+      <section id="s2" class="main_section animate">
         <p id="canadaFLW" class="style_body">
-          In Canada only, at least
-          <span class="style_body_accent_red">20% </span> of all food produced
-          ends up in landfills, incinerated or managed as organic waste.
+          While in Canada only,
+          <span class="style_body_accent_red">at least 20% </span> of all food
+          produced ends up in landfills, incinerated or managed as organic
+          waste.
         </p>
 
         <div id="fiveTomatoes" class="canadaFLW animate">
-          <img src="assets/pictures/tomato-02.png" class="tomato" />
+          <img src="assets/pictures/tomato-02.png" class="tomato animate" />
         </div>
 
         <h2 class="style_h2_accent">
-          This <br />represents 11 million tonnes of avoidable food waste
+          This represents 11 million tonnes of avoidable food waste
         </h2>
       </section>
 
+      <!-- section 3-->
       <section id="s3" class="main_section">
         <div id="sliderImg" class="sliderImg"></div>
+        <!-- <img id="sliderFrontImg" src="assets/pictures/eiffelTest.svg" alt="" /> -->
+        <div id="testImg"></div>
+
         <p>Roughly the equivalent weight of</p>
         <div id="sliderContainer">
           <input
@@ -108,40 +115,42 @@
             class="slider"
             id="range"
           />
-          <h1 class="style_h1_accent"><span id="numSlider">1</span></h1>
+          <h1 class="style_h1_accent"><span id="numSlider">?</span></h1>
         </div>
 
         <h2 class="style_h1_accent">Eiffel Towers</h2>
       </section>
 
+      <!-- section 4 -->
       <section id="s4" class="main_section">
-        <h2 class="style_h2">
-          While the economic value of food waste in 2016 amounted to 3% of
-          Canada’s gdp
-        </h2>
+        <p class="style_h2">
+          While the economic value of food waste amounted to 3% of Canada’s GDP
+          in 2016
+        </p>
 
-        <h1 class="style_h1_accent">
+        <p class="style_h1_accent">
           $49.5
-        </h1>
+        </p>
 
-        <h2 class="style_h2_accent">
+        <p class="style_h2_accent">
           billions down the drain
-        </h2>
+        </p>
 
-        <p>
+        <p class="style_body">
           Enough to feed every person living in Canada for 5 months
         </p>
       </section>
 
+      <!-- section 5-->
       <section id="s5" class="main_section">
-        <h2 class="style_h2_accent">In terms of environmental impact...</h2>
+        <p class="style_h2_accent">In terms of environmental impact...</p>
 
-        <p>
+        <p class="para1 style_body">
           As rotting food waste in landfills turn into methane, a gas 25% more
           potent than carbon dioxide (CO2),
         </p>
 
-        <p>
+        <p class="para2 style_body">
           the
           <span class="style_body_accent_red">greenhouse gas footprint </span>of
           avoidable food waste is equivalent to
@@ -150,25 +159,74 @@
           >into the atmosphere.
         </p>
 
-        <h1 class="style_h1_accent">
+        <p class="style_h1_accent">
           56.5
-        </h1>
-        <h2 class="style_h3_accent">
-          Million tonnes of CO2 released into the atmosphere
-        </h2>
-        <h2 class="style_h1_accent">+</h2>
-        <h1 class="style_h1_accent">
-          1.4
-        </h1>
-        <h2 class="style_h3_accent">
-          Billion tonnes fresh water wasted wasted
-        </h2>
-
+        </p>
         <p class="style_h3_accent">
+          Million tonnes of CO2 <br />released into the atmosphere
+        </p>
+      </section>
+
+      <!-- section 6 -->
+      <section id="s6" class="main_section">
+        <p id="sign" class="style_h1_accent">+</p>
+        <p id="stat" class="style_h1_accent">
+          1.4
+        </p>
+        <p class="style_h3_accent">
+          Billion tonnes fresh water wasted wasted
+        </p>
+
+        <p class="style_body">
           Food waste accounts for 60% of the canadian food industry’s blue water
           footprint
         </p>
       </section>
+
+      <!-- section 7 -->
+      <section id="s7" class="main_section">
+        <div id="chartMobile" class="chartContainer">
+          <div id="production" class="chart"></div>
+          <div id="processing" class="chart"></div>
+          <div id="manufacturing" class="chart"></div>
+          <div id="distribution" class="chart"></div>
+          <div id="retail" class="chart"></div>
+          <div id="household" class="chart"></div>
+          <div id="hri" class="chart"></div>
+        </div>
+
+        <p class="title style_h2">
+          Percentage avoidable edible food loss and waste
+        </p>
+
+        <div class="stat">
+          <div id="category" class="style_h2"></div>
+          <div id="volume" class="style_h2"></div>
+          <div id="percentage" class="style_h1_accent"></div>
+        </div>
+      </section>
+
+      <!-- section 8 -->
+      <section id="s8" class="main_section">
+        <h1>Production</h1>
+      </section>
+
+      <!-- section 9 -->
+      <section id="s9" class="main_section"></section>
+      <!-- section 7 -->
+      <section id="s10" class="main_section"></section>
+      <!-- section 7 -->
+      <section id="s10" class="main_section"></section>
+      <!-- section 11 -->
+      <section id="s11" class="main_section"></section>
+      <!-- section 12 -->
+      <section id="s12" class="main_section"></section>
+      <!-- section 13 -->
+      <section id="s13" class="main_section"></section>
+      <!-- section 14 -->
+      <section id="s14" class="main_section"></section>
+      <!-- section 15 -->
+      <section id="s15" class="main_section"></section>
     </main>
 
     <!-- my scripts -->
@@ -178,5 +236,6 @@
     <script src="js/horizontalScroll.js"></script>
     <script src="js/content.js"></script>
     <script src="js/barchart.js"></script>
+    <script src="js/Square.js"></script>
   </body>
 </html>

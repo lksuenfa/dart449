@@ -34,15 +34,24 @@ ScrollTrigger.matchMedia({
       },
     });
 
+    // triggerAnimation.forEach((sct, i) => {
+    //   ScrollTrigger.create({
+    //     trigger: sct,
+    //     start: () =>
+    //       "top top-=" +
+    //       (sct.offsetLeft - window.innerWidth / 4) *
+    //         (maxWidth / (maxWidth - window.innerWidth)),
+    //     end: () =>
+    //       "+=" + sct.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
+    //     toggleClass: { targets: sct, className: "active" },
+    //   });
+    // });
+
     triggerAnimation.forEach((sct, i) => {
       ScrollTrigger.create({
         trigger: sct,
-        start: () =>
-          "top top-=" +
-          (sct.offsetLeft - window.innerWidth / 4) *
-            (maxWidth / (maxWidth - window.innerWidth)),
-        end: () =>
-          "+=" + sct.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
+        start: "+=" + (window.innerWidth - sct.offsetLeft),
+        end: "+=" + (sct.offsetLeft + window.innerWidth * 2),
         toggleClass: { targets: sct, className: "active" },
       });
     });

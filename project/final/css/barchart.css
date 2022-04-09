@@ -1,5 +1,39 @@
-#barchart {
-  width: 300px;
+:root {
+  /* palette */
+  --red: #bf0607;
+  --plum: #600218;
+  --teal: #025b6d;
+  --chartreuse: #7f961a;
+  --lime: #d4d80e;
+  --black: #0000;
+  --beige: #eeeae5;
+
+  /* typeface */
+  --bodyFont: "Roboto", sans-serif;
+  --specialFont: "Xanh Mono", monospace;
+
+  /* page margins */
+  --sideMargins: 0% 5%;
+}
+
+#s7 {
+  background-color: var(--red);
+  /* padding: 10%; */
+  color: var(--beige);
+}
+
+.chartContainer {
+  width: 5%;
   height: 100vh;
-  background-color: black;
+  margin-left: 40%;
+
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.chart {
+  width: 100%;
+  background-color: var(--teal);
 }

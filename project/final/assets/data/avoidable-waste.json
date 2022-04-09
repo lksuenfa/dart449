@@ -1,0 +1,56 @@
+{
+  "Description": "Tonnage(in Millions) and Percentage of Unplanned, Post- Processing (Avoidable), Potentially Edible FLW",
+  "Source": "Canada, Environment and Climate Change. Taking Stock: Reducing Food Loss and Waste in Canada. 28 June 2019",
+  "data": [
+    {
+      "type": "production",
+      "percentage": "0.06",
+      "volume": "0.66",
+      "value": "2.88"
+    },
+    {
+      "type": "processing",
+      "percentage": "0.2",
+      "volume": "2.25",
+      "value": "9.78"
+    },
+
+    {
+      "type": "manufacturing",
+      "percentage": "0.23",
+      "volume": "2.57",
+      "value": "11.17"
+    },
+
+    {
+      "type": "distribution",
+      "percentage": "0.05",
+      "volume": "0.55",
+      "value": "2.41"
+    },
+    {
+      "type": "retail",
+      "percentage": "0.12",
+      "volume": "1.31",
+      "value": "5.7"
+    },
+    {
+      "type": "household",
+      "percentage": "0.21",
+      "volume": "2.38",
+      "value": "10.37"
+    },
+    {
+      "type": "hri",
+      "percentage": "0.13",
+      "volume": "1.44",
+      "value": "7.14"
+    }
+  ],
+
+  "units": {
+    "percentage": "%",
+    "volume": "million tonnes",
+    "value": "billion CAD"
+  }
+}

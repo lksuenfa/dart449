@@ -24,7 +24,7 @@ plusSign.addEventListener("click", () => {
   }
 
   if (initialVal === GOOD_ANSWER) {
-    value.style.color = "#bf0607";
+    value.style.color = "#d4d80e";
 
     textContainer.innerHTML = congrats_text;
     plusSign.style.display = "none";
@@ -43,7 +43,7 @@ minusSign.addEventListener("click", () => {
   }
 
   if (initialVal === GOOD_ANSWER) {
-    value.style.color = "#bf0607";
+    value.style.color = "#d4d80e";
     textContainer.innerHTML = congrats_text;
     plusSign.style.display = "none";
     minusSign.style.display = "none";

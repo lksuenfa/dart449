@@ -443,8 +443,10 @@ Perfect Full Page Background Image
 /*-------s11 */
 
 #s11 {
+  background-color: var(--teal);
   display: flex;
   align-items: center;
+  color: var(--beige);
 }
 
 #question {
@@ -532,6 +534,9 @@ Perfect Full Page Background Image
 #s15 {
   height: 100vh;
   overflow: hidden;
+}
+
+#s16 {
 }
 /*_ Medium devices (landscape tablets, 768px and up) _*/
 @media only screen and (min-width: 768px) {

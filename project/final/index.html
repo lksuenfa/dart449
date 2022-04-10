@@ -102,20 +102,25 @@
         <!-- <img id="sliderFrontImg" src="assets/pictures/eiffelTest.svg" alt="" /> -->
         <div id="testImg"></div>
 
-        <p>Roughly the equivalent weight of</p>
-        <div id="sliderContainer">
-          <input
-            type="range"
-            min="0"
-            max="1089"
-            value="50"
-            class="slider"
-            id="range"
-          />
-          <h1 class="style_h1_accent"><span id="numSlider">?</span></h1>
+        <div class="wrapper">
+          <div id="questionContainer">
+            <p>This is roughly the equivalent weight of</p>
+            <div id="sliderContainer">
+              <input
+                type="range"
+                min="0"
+                max="1089"
+                value="50"
+                class="slider"
+                id="range"
+              />
+            </div>
+          </div>
+          <div id="eiffelContainer">
+            <h1 class="style_h1_accent"><span id="numSlider">????</span></h1>
+            <h2 class="style_h2_accent">Eiffel Towers</h2>
+          </div>
         </div>
-
-        <h2 class="style_h1_accent">Eiffel Towers</h2>
       </section>
 
       <!-- section 4 -->
@@ -303,13 +308,13 @@
       </section>
       <!-- section 12 -->
       <section id="s12" class="main_section">
-        <p>
+        <p class="style_h2">
           Nonetheless, it is generally accepted that
-          <span>reducing food waste and loss at all levels</span> can help
-          <span>minimize climate change</span> and
-          <span
-            >lead to more efficient and sustainable resource management.</span
+          <span class="style_body_accent_red"
+            >reducing food waste and loss at all levels can help minimize
+            climate change</span
           >
+          and lead to more efficient and sustainable resource management.
         </p>
       </section>
 
@@ -400,8 +405,10 @@
       <!-- section 14 -->
       <section id="s16" class="main_section">
         <div class="wrapper">
-          <div>
-            <a href="cta.html"> <h1>Act Now</h1></a>
+          <div id="CTA">
+            <a href="cta.html">
+              <h1>Learn how to <br />reduce food waste</h1></a
+            >
           </div>
           <img
             id="sun"

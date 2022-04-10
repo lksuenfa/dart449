@@ -166,6 +166,68 @@
 }
 
 /* --------s3 */
+
+#s3 .wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+#questionContainer {
+  padding: 5%;
+  grid-column: 1/2;
+  justify-content: center;
+  align-self: center;
+}
+
+#eiffelContainer {
+  grid-column: 2/3;
+  justify-content: center;
+  align-self: flex-start;
+  padding-top: 5%;
+  padding-left: 10%;
+  /* text-align: center; */
+}
+
+#sliderContainer {
+  margin-top: 20%;
+}
+
+/* custom slider
+https://www.w3schools.com/howto/howto_js_rangeslider.asp */
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  background: darkgrey;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 0.7;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--red);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
 #sliderImg {
   top: 0;
   left: 0;
@@ -191,9 +253,9 @@
   width: 100%;
   height: 100%;
   position: fixed;
-  background-image: url("../assets/pictures/eiffelTest.png");
+  background-image: url("../assets/pictures/eiffel-02.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   z-index: -5;
 }
 
@@ -536,8 +598,33 @@ Perfect Full Page Background Image
   overflow: hidden;
 }
 
+/* ------s16 */
 #s16 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
+
+#CTA {
+  width: 50vw;
+  text-align: center;
+  padding: 3%;
+  margin-bottom: 40%;
+  background-color: var(--plum);
+  border-radius: 10px 10px;
+}
+
+#CTA a:link,
+#CTA a:visited {
+  text-decoration: none;
+  color: var(--beige);
+}
+
+#CTA:hover {
+  background-color: var(--red);
+}
+
 /*_ Medium devices (landscape tablets, 768px and up) _*/
 @media only screen and (min-width: 768px) {
   #s1 {
@@ -637,6 +724,15 @@ Perfect Full Page Background Image
     width: 70%;
   }
 
+  /* -----s3 */
+
+  #questionContainer p {
+    font-size: 1.5rem;
+  }
+
+  #eiffelContainer h1 {
+    font-size: 12rem;
+  }
   /* ------s4 */
   #s4 p.style_h2 {
     width: 80%;
@@ -741,6 +837,38 @@ Perfect Full Page Background Image
   #s12 p {
     font-size: 2rem;
   }
+
+  /* -----s13-15 */
+  #s13 h2.style_h3_accent {
+    font-size: 2rem;
+  }
+
+  #s13 .wrapper,
+  #s14 .wrapper,
+  #s15 .wrapper {
+    padding-top: 10%;
+  }
+
+  #s13 .wrapperText,
+  #s14 .wrapperText,
+  #s15 .wrapperText {
+    font-size: 2rem;
+  }
+
+  #s13 .wrapper .style_h2,
+  #s15 .wrapper .style_h2 {
+    font-size: 1.5rem;
+    width: 70%;
+  }
+
+  #s14 .wrapper .style_h2 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  #CTA {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -757,6 +885,16 @@ Perfect Full Page Background Image
 
   #stat {
     font-size: 25rem;
+  }
+
+  /* -----s3 */
+
+  #questionContainer p {
+    font-size: 2.1rem;
+  }
+
+  #eiffelContainer h1 {
+    font-size: 14rem;
   }
 
   /* ------s9 */
@@ -809,6 +947,24 @@ Perfect Full Page Background Image
     font-size: 2.5rem;
   }
 
+  /* -----s3 */
+
+  #questionContainer p {
+    font-size: 2.5rem;
+  }
+
+  #eiffelContainer h1 {
+    font-size: 16rem;
+  }
+
+  .slider {
+    height: 25px;
+  }
+
+  .slider::-webkit-slider-thumb {
+    width: 45px;
+    height: 45px;
+  }
   /* ------s4 */
   #s4 p.style_h2 {
     font-size: 3rem;
@@ -885,5 +1041,29 @@ Perfect Full Page Background Image
   /* -----s12 */
   #s12 p {
     font-size: 3.5rem;
+  }
+
+  /* ------s13-15 */
+  #s13 h2.style_h3_accent {
+    font-size: 2.5rem;
+  }
+
+  #s13 .wrapperText,
+  #s14 .wrapperText,
+  #s15 .wrapperText {
+    font-size: 2.5rem;
+  }
+
+  #s13 .wrapper .style_h2,
+  #s15 .wrapper .style_h2 {
+    font-size: 2rem;
+  }
+
+  #s14 .wrapper .style_h2 {
+    font-size: 2rem;
+  }
+
+  #CTA {
+    font-size: 3rem;
   }
 }

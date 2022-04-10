@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Exercise 5 - project prototype</title>
+    <title>Beyond the food waste</title>
 
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.png" />
@@ -12,15 +12,12 @@
     <!-- css  -->
     <link rel="stylesheet" type="text/css" href="css/general.css" />
     <link rel="stylesheet" type="text/css" href="css/nav.css" />
-
     <link rel="stylesheet" type="text/css" href="css/content_horizontal.css" />
     <link rel="stylesheet" type="text/css" href="css/barchart.css" />
+    <link rel="stylesheet" type="text/css" href="css/roadmap.css" />
 
     <!-- effets stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
-
-    <!-- library scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <!-- menu -->
@@ -34,7 +31,8 @@
         <ul class="overlay-content">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a class="navigateToSection" href="#s7">Header7</a></li>
+          <li><a href="roadmap.html">Roadmap</a></li>
+          <li><a href="#s16">s16</a></li>
         </ul>
       </div>
 
@@ -208,25 +206,214 @@
 
       <!-- section 8 -->
       <section id="s8" class="main_section">
-        <h1>Production</h1>
+        <div id="FAO">
+          <p>
+            The
+            <span class="style_body_accent_white">
+              Food and Agriculture Organization of the United Nations </span
+            >actually distinguishes
+            <span class="style_body_accent_white">“food loss”</span> occurring
+            at the production, postharvest and processing stages in the food
+            supply chain from
+            <span class="style_body_accent_white">“food waste”</span>
+            which occurs at the retailer and consumer level.
+          </p>
+        </div>
+
+        <div>
+          <p id="distinction">
+            This distinction between the unavoidable connotation of the term
+            “food loss” versus the actionable one of “food waste” has been built
+            into a biased global narrative according to which ...
+          </p>
+        </div>
       </section>
 
       <!-- section 9 -->
-      <section id="s9" class="main_section"></section>
-      <!-- section 7 -->
-      <section id="s10" class="main_section"></section>
-      <!-- section 7 -->
-      <section id="s10" class="main_section"></section>
+      <section id="s9" class="main_section">
+        <div id="poor">
+          <p class="style_h3_accent">
+            In developping countries, food is primarily lost at earlier stages
+            of the supply chain due to poor technical infrastructure
+          </p>
+        </div>
+        <div id="rich">
+          <p>
+            <span class="style_h3_accent">
+              While rich countries produce food waste due to wasteful consumer
+              habits;
+            </span>
+            <br />successfully shifting the focus from systemic and
+            institutional problems to the consumer side, the individual citizen.
+          </p>
+        </div>
+      </section>
+      <!-- section 10 -->
+      <section id="s10" class="main_section">
+        <p>
+          Even international efforts to tackle the food waste crisis
+          underestimate the impact the contribution of production and supply
+          chains could have.
+          <br />
+          <br />
+          <span class="style_body_accent_black"
+            >The United Nations’ 2030 Agenda for Sustainable Development set the
+            target to “halve per capita global food waste at the retail and
+            consumer levels and reduce food losses along production and supply
+            chains, including post-harvest losses”, target to which Canada has
+            committed itself to in 2015 .
+          </span>
+          <br />
+          <br />
+          While the target for the consumer and retail side is specific and
+          measurable, there is a lesser emphasis on production and supply chains
+          whose target can only be described as vague at most.
+        </p>
+      </section>
       <!-- section 11 -->
-      <section id="s11" class="main_section"></section>
+      <section id="s11" class="main_section">
+        <div id="question">
+          <p id="textContainer">
+            According to you, how much food waste actually comes from the
+            consumer side globally?
+          </p>
+        </div>
+        <div id="numberScroll">
+          <svg
+            id="increase"
+            style="width: 100px; height: 100px;"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"
+            />
+          </svg>
+          <p id="wasteValue" class="style_h1_accent">50%</p>
+          <svg
+            id="decrease"
+            style="width: 100px; height: 100px;"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+            />
+          </svg>
+        </div>
+      </section>
       <!-- section 12 -->
-      <section id="s12" class="main_section"></section>
+      <section id="s12" class="main_section">
+        <p>
+          Nonetheless, it is generally accepted that
+          <span>reducing food waste and loss at all levels</span> can help
+          <span>minimize climate change</span> and
+          <span
+            >lead to more efficient and sustainable resource management.</span
+          >
+        </p>
+      </section>
+
+      <section id="s13" class="main_section">
+        <h2 class="style_h3_accent">
+          the food waste story before the consumer side
+        </h2>
+
+        <div class="bodyText">
+          <h1 class="style_h2_accent">From producers...</h1>
+
+          <div class="wrapper">
+            <p class="wrapperText">
+              There is currently a gap in food loss studies in the global North
+              and this issue is actually less well understood there than in
+              developing countries. Farmers’ opinions are specially
+              underrepresented in food loss studies resulting in policies and
+              solutions which might undermine their interests. It is likely that
+              food loss at the production stage might be connected to unfair
+              trading practices from buyers encouraging over-production,
+              selection according to aesthetic qualities, financial risks, and
+              various imbalances in market power and volatility. Buyers have a
+              huge power as the only 5 big multinational corporations command
+              80% of the Canadian market.
+            </p>
+
+            <p class="style_h2">
+              Unfair trading practices like short notice cancellations and
+              unilateral contract changes by buyers have been identified as a
+              major cause of food loss.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- section 12 -->
+      <section id="s14" class="main_section">
+        <div class="wrapper">
+          <p class="wrapperText">
+            However, solutions to reduce food loss on the farm in Canada tend to
+            focus on charitable actions such as encouraging food recovery or
+            through tax incentives for donations. In reality, many farmers feel
+            that the 25% tax credit offered did not offset the logistical costs
+            of donating surplus food and the charitable sector faces significant
+            logistical challenges due to limited infrastucture which makes it
+            difficult to manage the high volumes of produce.
+          </p>
+
+          <p class="style_h2">
+            The overly complicated paperwork makes it very difficult for
+            polyculture farmers with diverse crops to claim tax creditsas as the
+            amount of each type of food needs to be specified. It is thus a
+            process favoring monocultures, which are more wasteful and less
+            sustainable.
+          </p>
+        </div>
+      </section>
       <!-- section 13 -->
-      <section id="s13" class="main_section"></section>
+      <section id="s15" class="main_section">
+        <div class="bodyText">
+          <h1 class="style_h2_accent">To manufacturers...</h1>
+
+          <div class="wrapper">
+            <p class="wrapperText">
+              The implementation of overly conservative data labels by
+              manufacturers to protect their brand and manage consumer
+              perceptions of the product’s quality has gradually turned into a
+              significant driver of food waste. A best before date is not an
+              expiry date and has little to do with food safety. If products are
+              close to or past the date label assigned to them, some retail and
+              foodservice customers have the option to return the product to the
+              manufacturer at no cost to them. Even though a manufactured
+              product’s date code can be highly conservative and the food
+              perfectly safe to eat, some manufacturers will not donate this
+              food.
+            </p>
+
+            <p class="style_h2">
+              A best before date is not an expiry date and has little to do with
+              food safety.
+              <br /><br />
+              Date labels are not under governmental regulations and each
+              manufacturer set their own.
+              <br /><br />
+            </p>
+          </div>
+        </div>
+      </section>
       <!-- section 14 -->
-      <section id="s14" class="main_section"></section>
+      <section id="s16" class="main_section">
+        <div class="wrapper">
+          <div></div>
+          <img
+            id="sun"
+            class="rotate"
+            src="assets/pictures/sun.png"
+            alt="red sun"
+          />
+        </div>
+
+        <img class="bkg_img" src="assets/pictures/farm.png" alt="" />
+      </section>
       <!-- section 15 -->
-      <section id="s15" class="main_section"></section>
+      <section id="s17" class="main_section"></section>
     </main>
 
     <!-- my scripts -->
@@ -237,5 +424,6 @@
     <script src="js/content.js"></script>
     <script src="js/barchart.js"></script>
     <script src="js/Square.js"></script>
+    <script src="js/numberScroll.js"></script>
   </body>
 </html>

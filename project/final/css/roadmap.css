@@ -1,0 +1,20 @@
+#s16 {
+  display: flex;
+}
+
+.bkg_img {
+  /* margin-top: 33%; */
+  position: fixed;
+  z-index: -1;
+  align-self: flex-end;
+
+  width: 100%;
+  height: 30%;
+}
+
+#sun {
+  width: 10%;
+  position: fixed;
+  right: 100px;
+  top: 50%;
+}

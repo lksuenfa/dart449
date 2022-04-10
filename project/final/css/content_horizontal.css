@@ -51,6 +51,15 @@
   color: var(--red);
 }
 
+.style_body_accent_white {
+  font-weight: 600;
+  color: var(--beige);
+}
+
+.style_body_accent_black {
+  font-weight: 600;
+}
+
 .main_section {
   padding: 0%;
 }
@@ -332,7 +341,7 @@
   grid-template-columns: 0.5fr 4fr;
   grid-template-rows: 0.5fr 4fr;
   width: 50vh;
-  height: 40vh;
+  height: 45vh;
 }
 
 #category {
@@ -352,8 +361,178 @@
   font-size: 10rem;
   align-self: flex-end;
   line-height: 0.9;
+  margin-left: 10%;
 }
 
+/* --------s8 */
+
+#s8 {
+  display: flex;
+  /* height: 100vh;
+  width: 100vw; */
+}
+
+#FAO {
+  width: 100%;
+  padding: 10%;
+
+  color: var(--beige);
+
+  background-color: var(--red);
+
+  justify-content: center;
+}
+
+#distinction {
+  padding: 50% 15% 15% 15%;
+  font-weight: 300;
+
+  justify-content: center;
+  align-self: center;
+}
+
+/* -------s9 */
+
+#s9 {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+
+  /*
+Perfect Full Page Background Image
+ https://css-tricks.com/perfect-full-page-background-image/ */
+  background: url("../assets/pictures/map.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#poor {
+  padding: 5%;
+}
+
+#poor p.style_h3_accent {
+  padding: 5%;
+  font-size: 0.9rem;
+  background-color: rgba(238, 234, 229, 0.9);
+}
+
+#rich {
+  align-self: flex-end;
+  padding: 5% 2% 2% 15%;
+}
+
+#rich p {
+  padding: 5%;
+  background-color: rgba(238, 234, 229, 0.9);
+  font-size: 0.9rem;
+}
+
+#rich span.style_h3_accent {
+  font-size: 0.95rem;
+}
+
+/* ------s10 */
+#s10 {
+  width: 100vw;
+  height: 100vh;
+  padding: 10%;
+}
+
+/*-------s11 */
+
+#s11 {
+  display: flex;
+  align-items: center;
+}
+
+#question {
+  width: 40%;
+  padding: 0% 5%;
+}
+
+#numberScroll {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+}
+
+/* -------s12 */
+
+#s12 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#s12 p {
+  width: 70%;
+  font-size: 1.5rem;
+}
+
+/* -------s13 */
+
+#s13 {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+#s13 h2.style_h3_accent {
+  transform: rotate(-180deg);
+  writing-mode: vertical-rl;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#s13 h1 {
+  padding-left: 2%;
+}
+#s13 .bodyText,
+#s15 .bodyText {
+  padding: 2%;
+}
+
+#s13 .wrapper,
+#s14 .wrapper,
+#s15 .wrapper {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#s13 .wrapper .style_h2,
+#s14 .wrapper .style_h2,
+#s15 .wrapper .style_h2 {
+  font-size: 0.9rem;
+  padding: 2%;
+}
+
+#s13 .wrapperText,
+#s14 .wrapperText,
+#s15 .wrapperText {
+  width: 300%;
+}
+
+#s13 p,
+#s14 p,
+#s15 p {
+  padding: 2%;
+}
+
+#s14 {
+  padding: 7%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#s15 {
+  height: 100vh;
+  overflow: hidden;
+}
 /*_ Medium devices (landscape tablets, 768px and up) _*/
 @media only screen and (min-width: 768px) {
   #s1 {
@@ -496,12 +675,66 @@
   }
 
   /* -------s7 */
+  #s7 .stat {
+    padding-left: 60%;
+  }
 
   #volume {
     font-size: 1.5rem;
   }
   #percentage {
     font-size: 14rem;
+  }
+
+  /* ------s8 */
+  #FAO {
+    font-size: 2rem;
+  }
+
+  #distinction {
+    padding-top: 70vh;
+    width: 50vw;
+    font-size: 1.5rem;
+  }
+
+  /* ------s9 */
+
+  #poor {
+    width: 100%;
+  }
+
+  #poor p.style_h3_accent {
+    font-size: 1.5rem;
+  }
+
+  #rich {
+    padding-left: 10%;
+  }
+  #rich p {
+    font-size: 1.5rem;
+  }
+
+  #rich span.style_h3_accent {
+    font-size: 2.2rem;
+  }
+
+  /* ------s10 */
+  #s10 {
+    font-size: 2rem;
+  }
+
+  /* ------s11 */
+  #question {
+    font-size: 2rem;
+  }
+
+  #wasteValue {
+    font-size: 18rem;
+  }
+
+  /* -----s12 */
+  #s12 p {
+    font-size: 2rem;
   }
 }
 
@@ -519,6 +752,23 @@
 
   #stat {
     font-size: 25rem;
+  }
+
+  /* ------s9 */
+  #poor p.style_h3_accent {
+    font-size: 2rem;
+  }
+  #rich p {
+    font-size: 2rem;
+  }
+
+  #rich span.style_h3_accent {
+    font-size: 3rem;
+  }
+
+  /* -----s12 */
+  #s12 p {
+    font-size: 2.5rem;
   }
 }
 
@@ -591,5 +841,44 @@
   }
   #percentage {
     font-size: 20rem;
+  }
+
+  /* -------s8 */
+
+  #FAO {
+    font-size: 3rem;
+  }
+  #distinction {
+    font-size: 2.2rem;
+  }
+
+  /* ------s9 */
+  #poor p.style_h3_accent {
+    font-size: 2.5rem;
+  }
+  #rich p {
+    font-size: 2.5rem;
+  }
+
+  #rich span.style_h3_accent {
+    font-size: 3.5rem;
+  }
+
+  /* ------s10 */
+  #s10 {
+    font-size: 3rem;
+  }
+
+  #question {
+    font-size: 3rem;
+  }
+
+  #wasteValue {
+    font-size: 30rem;
+  }
+
+  /* -----s12 */
+  #s12 p {
+    font-size: 3.5rem;
   }
 }

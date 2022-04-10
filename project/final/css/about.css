@@ -1,0 +1,24 @@
+#sect_1,
+#sect_2,
+#sect_3 {
+  padding: 5% 10%;
+}
+
+.page_title {
+  padding-bottom: 2%;
+}
+
+.ref {
+  font-size: 0.75rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .page_title {
+    font-size: 3rem;
+  }
+
+  .ref,
+  #sect_1 p {
+    font-size: 1.5rem;
+  }
+}

@@ -102,8 +102,19 @@
 .s1_header h3 {
   grid-row: 4/5;
   grid-column: 3/5;
+  align-self: center;
 }
 
+#titlePageImg {
+  grid-column: 3/5;
+  grid-row: 1/4;
+  background: url("../assets/pictures/tomatoes.png") no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+}
 /* --------s2 */
 
 #s2_1 {

@@ -3,8 +3,8 @@
 let tomatoes = [];
 let fiveTomatoes = {
   container: document.querySelector("#fiveTomatoes"),
-  image: "assets/pictures/tomato-01.png",
-  imageRotten: "assets/pictures/tomato-02.png",
+  image: "assets/pictures/tomatoes-05.png",
+  imageRotten: "assets/pictures/tomatoes-06.png",
   numTomatoes: 5,
 };
 

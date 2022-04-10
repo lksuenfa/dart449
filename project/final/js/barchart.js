@@ -108,7 +108,7 @@ function barchartInteraction() {
   // reset
   barchartSections.forEach((item) => {
     item.addEventListener("mouseleave", () => {
-      item.style.backgroundColor = "#025b6d";
+      // item.style.backgroundColor = "#025b6d";
     });
   });
 }

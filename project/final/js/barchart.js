@@ -12,7 +12,7 @@ const category = document.querySelector("#category");
 const volume = document.querySelector("#volume");
 const percentage = document.querySelector("#percentage");
 
-const requestURL = "../assets/data/avoidable-waste.json";
+const requestURL = "assets/data/avoidable-waste.json";
 const request = new XMLHttpRequest();
 
 let wasteData;
